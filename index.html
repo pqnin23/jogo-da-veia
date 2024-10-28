@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Véia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Véia</h1>
+        
+        <!-- Selecionar Modo de Jogo -->
+        <label for="gameMode">Modo de Jogo:</label>
+        <select id="gameMode">
+            <option value="twoPlayers">Dois Jogadores</option>
+            <option value="computer">Contra o Computador</option>
+        </select>
+        
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <button id="reset">Reiniciar Jogo</button>
+        <div class="message" id="message"></div>
+    </div>
+    
+    <audio id="clickSound" src="click.wav"></audio>
+    <audio id="gameOverSound" src="game-over.wav"></audio>
+    <audio id="victorySound" src="victory.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
